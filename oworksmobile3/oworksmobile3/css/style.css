@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family= Noto+Serif:wght@700 & family= Roboto:wght@300 & display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    /* define o amanho maxima do container*/
+    padding: 0 2%;
+    margin: 0 auto;
+    max-height: 1200px;
+    display: flex;
+    justify-content: space-between;
+
+    /* minha edição */
+}
+
+.navbar ul {
+    /* chamando a lista inteira */
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar li {
+    /* chamando cada li dentro do UL */
+    /* define como cada elemento dentro da lista irá ficar na posição, nesse caso horizontal */
+    margin: 0 12px;
+    font-size: 15px;
+    padding: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    opacity: 0.8;
+    color: #000000;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar a:hover {
+    /* utilizada para realizar ações após o mouse passar por cima  */
+    color: #da5f17;
+    transition: 800ms;
+}
+
+.chamada {
+    margin-top: 30px;
+    margin-left: 55px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mobile {
+    display: none;
+}
+
+.chamada h1 {
+    font-size: 45px;
+    opacity: 0%;
+    animation-name: aparecimento;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aparecimento {
+    0% {
+        /* Começa fora da tela à direita */
+        opacity: 0;
+        /* Começa com opacidade 0 */
+    }
+
+    100% {
+        opacity: 100%;
+        /* Termina com opacidade total */
+    }
+}
+
+.imagem-chamada {
+    float: right;
+    margin-top: 12px;
+}
+
+.imagem-chamada {
+    position: relative;
+    right: -100%;
+    /* Inicia fora da tela à direita */
+    animation-name: entrada-esquerda;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /* Suaviza a animação de entrada */
+    animation-fill-mode: forwards;
+    /* Mantém a posição final da animação */
+    opacity: 0;
+    /* Inicia com opacidade 0 */
+}
+
+@keyframes entrada-esquerda {
+    0% {
+        right: -100%;
+        /* Começa fora da tela à direita */
+        opacity: 0;
+        /* Começa com opacidade 0 */
+    }
+
+    100% {
+        right: 0;
+        /* Termina na posição original */
+        opacity: 1;
+        /* Termina com opacidade total */
+    }
+}
+
+.botao-chamada {
+    margin-left: 55px;
+    margin-top: 25px;
+}
+
+.botao-chamada input {
+    height: 51px;
+    width: 285px;
+    border-radius: 10px;
+    background-color: #da5f17;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+}
+
+.chamada2 {
+    display: inline-flex;
+    align-items: center;
+    gap: 136px;
+}
+
+.imagem-chamada2 img {
+    margin-top: 8%;
+}
+
+.imagem-chamada2 {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.imagem-esquerda,
+.imagem-direita {
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+.paragrafo-3 {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.imagem-chamada2.fade-in {
+    opacity: 1;
+}
+
+.texto-chamada2 {
+    margin-top: 10px;
+}
+
+.texto-chamada2 h2 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #da5f17;
+}
+
+.chamada-p2 {
+    font-family: 'Noto Serif', serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-top: 30px;
+    text-align:left;
+}
+
+.chamada3 {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    gap: 62px;
+}
+
+.chamada-texto3 h2 {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: #da5f17;
+}
+
+.chamada-texto3 p {
+    font-family: 'Noto Serif', serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.imagem-esquerda {
+    margin-top: 5%;
+}
+
+.imagem-direita {
+    margin-top: 7%;
+}
+
+.chamada-texto3 p {
+    margin-top: 10%;
+}
+
+
+.botao-teste {
+    height: 45px;
+    width: 320px;
+    border-radius: 10px;
+    background-color: #da5f17;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    margin-top: 9%;
+}
+
+.imagem-esquerda.fade-in {
+    opacity: 1;
+}
+
+.imagem-direita.fade-in {
+    opacity: 1;
+}
+
+.paragrafo-3.fade-in {
+    opacity: 1;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        position: relative;
+        padding: 0;
+        width: 100vw;
+    }
+
+    .container img.logo-desktop {
+        display: none;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    header {
+        display: block;
+    }
+    
+
+    .mobile {
+        display: flex;
+        width: 100vw;
+        height: 12vh;
+        flex-wrap: wrap;
+        background-color: #da5f17;
+
+    }
+
+    .mobile .logo-mobile {
+        width: 35%;
+        height: 85%;
+        padding-bottom: 10px;
+        z-index: 2;
+    }
+
+    .mobile #hamburguer {
+        width: 100%;
+        height: auto;
+    }
+
+    .mobile ul {
+        text-align: center;
+        margin: 0 auto;
+        list-style: none;
+        transform: translateY(20%);
+        font-size: 17px;
+    }
+    .mobile ul a{
+        text-decoration: none;
+        color: white;
+    }
+    .mobile ul li{
+        margin-bottom: 8px;
+        font-weight: 600;
+        
+    }
+    #navmobile {
+        margin: 0 auto;
+        background-color: #da5f17;
+        width: 100vw;
+        height: 22vh;
+        z-index: 1;
+        margin-top: -2px;
+        position: relative;
+        animation-duration: 0.5s;
+        display: none;
+      }
+      
+      .subir {
+        animation-name: subirAnimacao;
+      }
+      
+      .descer {
+        animation-name: descerAnimacao;
+        animation-fill-mode: none; /* Reset the 'top' property after animation */
+      }
+      
+      @keyframes subirAnimacao {
+        0% {
+          top: -100%;
+        }
+        100% {
+          top: 0;
+        }
+      }
+      
+      @keyframes descerAnimacao {
+        0% {
+          top: 0;
+        }
+        100% {
+          top: -260%;
+        }
+      }
+      
+
+    .mobile img {
+        margin-top: 10px;
+        height: 50px;
+    }
+
+    .mobile button {
+        width: 7%;
+        height: auto;
+        border: none;
+        background-color: transparent;
+        margin-bottom: 5px;
+        position: relative;
+        left: 50%;
+    }
+    .sessao1,
+    .sessao2,
+    .sessao3 {
+        width: 90vw;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 70px;
+    }
+    .sessao1{
+        margin-top: 10px;
+    }
+
+    .chamada h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 35px;
+    }
+    .chamada,
+    .chamada2,
+    .chamada3 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-left: 0;
+    }
+    .chamada3{
+        margin-top: -30px;
+    }
+
+    .imagem-chamada,
+    .imagem-chamada2,
+    .imagem-direita,
+    .imagem-esquerda {
+        width: 78vw;
+        margin-bottom: 30px;
+
+    }
+
+    .imagem-chamada2 img {
+
+        z-index: 1;
+    }
+
+    .imagem-chamada img,
+    .imagem-chamada2 img {
+        width: 100%;
+    }
+
+    .imagem-direita img,
+    .imagem-esquerda img {
+        width: 60%;
+    }
+
+    .botao-chamada {
+        margin: 0 auto;
+    }
+
+    .chamada-p2 p{
+        width: 100%;
+        font-size: 1rem;
+        background-color: #d7d7d7d6;
+        border-radius: 8px;
+    }
+       
+    
+
+    .texto-chamada2{
+        display: flex;
+        justify-content: center;
+    }
+    .texto-chamada2 h2 {
+        margin-bottom: -140px;
+        color: #000000;
+
+
+    }
+    .chamada-texto3{
+        width: 90vw;
+    }
+    .chamada-texto3 p{
+        margin-top: 2%;
+        font-size: 15px;
+    }
+    .chamada-p2{
+        width: 100vw;
+        height: auto;
+        position: absolute;
+        margin: 0 auto;
+        margin-top: 220px;
+        border-radius: 18px;
+        width: 80vw;
+        height: 40vh;
+        text-align: center;
+        left: 10%;
+       
+    }
+}
