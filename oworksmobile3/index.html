@@ -8,11 +8,13 @@
     <title>WorkUs</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="imagens/kanban (1).png" type="image/x-icon">
-    <script src="javascript/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
     <header>
+        <script src="javascript/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         <div class="container">
             <img src="imagens/logo.svg" class='logo-desktop' alt="">
             <div class="navbar">
@@ -25,16 +27,17 @@
 
             <div class="mobile">
                 <img src="imagens/logo_mobile.svg" class='logo-mobile' alt="">
-                <button onclick="menuHamburguer()" id="botao"><img src="imagens/menu.svg " onclick="trocarImg()" id="hamburguer" alt=""></button>
+                <button onclick="menuHamburguer()" id="botao"><img src="imagens/menu.svg " onclick="trocarImg()"
+                        id="hamburguer" alt=""></button>
                 <div id="navmobile"><!--mobile -->
-                    
+
                     <ul>
                         <li><a href="#">Quem somos nós</a></li>
                         <li><a href="#">Vantagens do WorkUs</a></li>
                         <li><a href="#">Contatos</a></li>
 
                     </ul>
-                    
+
                 </div>
             </div>
         </div>
@@ -65,12 +68,12 @@
                     </div>
                 </h2>
                 <div class="chamada-p2">
-                        <p>
-                            A nova jornada de trabalho exige novos hábitos e um controle melhor na disciplina de
-                            horários e demandas. Com a gente você cria, gerencia e executa todo o seu fluxo de
-                            trabalho junto ao de toda a sua equipe, principalmente em home office.
-                        </p>
-                    
+                    <p>
+                        A nova jornada de trabalho exige novos hábitos e um controle melhor na disciplina de
+                        horários e demandas. Com a gente você cria, gerencia e executa todo o seu fluxo de
+                        trabalho junto ao de toda a sua equipe, principalmente em home office.
+                    </p>
+
                 </div>
 
 
@@ -102,6 +105,74 @@
             <div class="imagem-direita">
                 <img src="imagens/Group 2.svg" alt="">
             </div>
+        </div>
+    </section>
+    <section class="container-sec">
+        <div class="blocos">
+            <!-- Primeiro -->
+            <div id="primeiro">
+                <img src="imagens/pack-01 1.svg" alt="" class="primeiro-img">
+                <p>Pacotes do tamanho da <br> sua equipe!</p>
+                <img src="imagens/retangulooo.svg" alt="">
+                <span>Pague apenas pelo o numero de usuarios dentro da sua necessidade.</span>
+            </div>
+            <!-- segundo -->
+            <div id="segundo">
+                <img src="imagens/segunda imagem bloco.svg" alt="" class="segundo-img">
+                <p>Integração com Google <br> Business</p>
+                <img src="imagens/retangulooo.svg" alt="">
+                <span>Tudo salvo na nuvem do seu email corporativo.</span>
+            </div>
+            <!-- terceiro -->
+            <div id="terceiro">
+                <img src="imagens/terceira imagem bloco.svg" alt="" class="terceiro-img">
+                <p>Suporte 24h com <br> atendentes reais</p>
+                <img src="imagens/retangulooo.svg" alt="">
+                <span>Pintou uma dúvida? Chama a gente! E não somos robôs.</span>
+            </div>
+            <!-- quarta -->
+            <div id="quarta">
+                <img src="imagens/quarta imagem bloco.svg" alt="" class="quarta-img">
+                <p>Ilimitado!</p>
+                <img src="imagens/retangulooo.svg" alt="">
+                <span>Tem 2, 20, 200 pessoas na sua equipe? Nosso sistema suporta qualquer número!
+                </span>
+            </div>
+
+        </div>
+    </section>
+    <section class="swiper-container" >
+        <div class="swiper-wrapper">
+            <!-- Primeiro -->
+            <div class="swiper-slide" id="primeiro">
+                <img src="imagens/pack-01 1.svg" alt="" class="primeiro-img">
+                <p>Pacotes do tamanho da <br> sua equipe!</p>
+                <img src="imagens/retangulooo.svg" alt="">
+                <span>Pague apenas pelo o numero de usuarios dentro da sua necessidade.</span>
+            </div>
+            <!-- segundo -->
+            <div class="swiper-slide " id="segundo">
+                <img src="imagens/segunda imagem bloco.svg" alt="" class="segundo-img">
+                <p>Integração com Google <br> Business</p>
+                <img src="imagens/retangulooo.svg" alt="">
+                <span>Tudo salvo na nuvem do seu email corporativo.</span>
+            </div>
+            <!-- terceiro -->
+            <div class="swiper-slide " id="terceiro">
+                <img src="imagens/terceira imagem bloco.svg" alt="" class="terceiro-img">
+                <p>Suporte 24h com <br> atendentes reais</p>
+                <img src="imagens/retangulooo.svg" alt="">
+                <span>Pintou uma dúvida? Chama a gente! E não somos robôs.</span>
+            </div>
+            <!-- quarta -->
+            <div class="swiper-slide " id="quarta">
+                <img src="imagens/quarta imagem bloco.svg" alt="" class="quarta-img">
+                <p>Ilimitado!</p>
+                <img src="imagens/retangulooo.svg" alt="">
+                <span>Tem 2, 20, 200 pessoas na sua equipe? Nosso sistema suporta qualquer número!
+                </span>
+            </div>
+
         </div>
     </section>
 </body>

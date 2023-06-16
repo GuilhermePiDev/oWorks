@@ -235,6 +235,93 @@ body {
 .paragrafo-3.fade-in {
     opacity: 1;
 }
+.swiper-container{
+    align-items: center;
+}
+.swiper-wrapper, .blocos {
+    display: flex;
+    width: 100vw;
+    background-color: #da5f17;
+    align-items: center;
+    height: 430px;
+    justify-content: center;
+    
+
+}
+
+
+#primeiro,
+#segundo,
+#terceiro,
+#quarta {
+    background-color: #fff;
+    height: 324px;
+    width: 250px;
+    border-radius: 7px;
+    text-align: center;
+    box-shadow: 5px 6px  rgba(0, 0, 0, 0.25);
+    margin: 0 2%;
+}
+#quarta{
+    margin-right: 3%
+}
+#primeiro p,
+#segundo p,
+#terceiro p,
+#quarta p{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+
+/* alinhando com o margin top as escritas */
+#primeiro span,
+#segundo span,
+#terceiro span,
+#quarta span{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+
+#primeiro-img {
+    margin-top: 2%;
+}
+
+#segundo p {
+    margin-top: 4px;
+    font-size: 18px;
+}
+
+#terceiro p {
+    margin-top: 23.5px;
+    font-size: 18px;
+}
+
+#primeiro p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#quarta p {
+    margin-top: 10px;
+    font-size: 18px;
+} 
+
+
+#terceiro-img {
+    margin-top: 17px;
+}
+.swiper-container{
+    display: none;
+
+}
+.swiper-slide{
+    width: 100%;
+}
 
 @media screen and (max-width:600px) {
     body {
@@ -273,6 +360,7 @@ body {
         width: 35%;
         height: 85%;
         padding-bottom: 10px;
+        z-index: 2;
     }
 
     .mobile #hamburguer {
@@ -301,10 +389,40 @@ body {
         background-color: #da5f17;
         width: 100vw;
         height: 22vh;
-        z-index: 2;
-        display: none;
+        z-index: 1;
         margin-top: -2px;
-    }
+        position: relative;
+        animation-duration: 0.5s;
+        display: none;
+      }
+      
+      .subir {
+        animation-name: subirAnimacao;
+      }
+      
+      .descer {
+        animation-name: descerAnimacao;
+        animation-fill-mode: none; /* Reset the 'top' property after animation */
+      }
+      
+      @keyframes subirAnimacao {
+        0% {
+          top: -100%;
+        }
+        100% {
+          top: 0;
+        }
+      }
+      
+      @keyframes descerAnimacao {
+        0% {
+          top: 0;
+        }
+        100% {
+          top: -260%;
+        }
+      }
+      
 
     .mobile img {
         margin-top: 10px;
@@ -419,4 +537,13 @@ body {
         left: 10%;
        
     }
+    .container-sec{
+        display: none;
+    }
+    .swiper-container{
+        display:flex;
+        width:100vw;
+        height: 70vh;
+    }
+    
 }
