@@ -1,64 +1,64 @@
 /* aparecer imagem de acordo com o scroll */
-window.addEventListener("scroll", function() {
-    var imgDiv = document.querySelector(".imagem-chamada2");
-    var imgOffset = imgDiv.offsetTop;
-    var imgHeight = imgDiv.offsetHeight;
-    var scrollPosition = window.pageYOffset;
+window.addEventListener("scroll", function () {
+  var imgDiv = document.querySelector(".imagem-chamada2");
+  var imgOffset = imgDiv.offsetTop;
+  var imgHeight = imgDiv.offsetHeight;
+  var scrollPosition = window.pageYOffset;
 
-    if (scrollPosition >= imgOffset - window.innerHeight + imgHeight * 0.5) {
-        imgDiv.classList.add("fade-in");
-    }
+  if (scrollPosition >= imgOffset - window.innerHeight + imgHeight * 0.5) {
+    imgDiv.classList.add("fade-in");
+  }
 });
 
-window.addEventListener("scroll", function() {
-    var imgDiv = document.querySelector(".imagem-esquerda");
-    var imgOffset = imgDiv.offsetTop;
-    var imgHeight = imgDiv.offsetHeight;
-    var scrollPosition = window.pageYOffset;
+window.addEventListener("scroll", function () {
+  var imgDiv = document.querySelector(".imagem-esquerda");
+  var imgOffset = imgDiv.offsetTop;
+  var imgHeight = imgDiv.offsetHeight;
+  var scrollPosition = window.pageYOffset;
 
-    if (scrollPosition >= imgOffset - window.innerHeight + imgHeight * 0.5) {
-        imgDiv.classList.add("fade-in");
-    }
+  if (scrollPosition >= imgOffset - window.innerHeight + imgHeight * 0.5) {
+    imgDiv.classList.add("fade-in");
+  }
 });
 
-window.addEventListener("scroll", function() {
-    var imgDiv = document.querySelector(".imagem-direita");
-    var imgOffset = imgDiv.offsetTop;
-    var imgHeight = imgDiv.offsetHeight;
-    var scrollPosition = window.pageYOffset;
+window.addEventListener("scroll", function () {
+  var imgDiv = document.querySelector(".imagem-direita");
+  var imgOffset = imgDiv.offsetTop;
+  var imgHeight = imgDiv.offsetHeight;
+  var scrollPosition = window.pageYOffset;
 
-    if (scrollPosition >= imgOffset - window.innerHeight + imgHeight * 0.5) {
-        imgDiv.classList.add("fade-in");
-    }
+  if (scrollPosition >= imgOffset - window.innerHeight + imgHeight * 0.5) {
+    imgDiv.classList.add("fade-in");
+  }
 });
 
-window.addEventListener("scroll", function() {
-    var imgDiv = document.querySelector(".paragrafo-3");
-    var imgOffset = imgDiv.offsetTop;
-    var imgHeight = imgDiv.offsetHeight;
-    var scrollPosition = window.pageYOffset;
+window.addEventListener("scroll", function () {
+  var imgDiv = document.querySelector(".paragrafo-3");
+  var imgOffset = imgDiv.offsetTop;
+  var imgHeight = imgDiv.offsetHeight;
+  var scrollPosition = window.pageYOffset;
 
-    if (scrollPosition >= imgOffset - window.innerHeight + imgHeight * 0.5) {
-        imgDiv.classList.add("fade-in");
-    }
+  if (scrollPosition >= imgOffset - window.innerHeight + imgHeight * 0.5) {
+    imgDiv.classList.add("fade-in");
+  }
 });
 
-function menuHamburguer(){
+function menuHamburguer() {
   const navmobile = document.getElementById("navmobile");
-  if(navmobile.style.display == "block"){
-    setTimeout(function() {
+  if (navmobile.style.display == "block") {
+    setTimeout(function () {
       navmobile.style.display = 'none';
     }, 500);
-     navmobile.classList.remove("subir");
-      navmobile.classList.add("descer");
+    navmobile.classList.remove("subir");
+    navmobile.classList.add("descer");
   }
-  else{
-     navmobile.style.display = "block"
-     navmobile.classList.remove("descer");
-     navmobile.classList.add("subir");
-     
-  }   
-  
+  else {
+    navmobile.style.display = "block"
+    navmobile.classList.remove("descer");
+    navmobile.classList.add("subir");
+
+  }
+
 
 }
 function trocarImg() {
@@ -71,4 +71,17 @@ function trocarImg() {
     imagemTroca.src = "imagens/menu.svg";
   }
 }
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    initialSlide: 0,
+  });
+
+  // Definir o slide atual para o terceiro slide (índice 2)
+  swiper.slideTo(-2);
+});
 

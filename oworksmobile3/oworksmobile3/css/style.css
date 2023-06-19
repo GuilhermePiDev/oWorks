@@ -178,7 +178,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     margin-top: 30px;
-    text-align:left;
+    text-align: left;
 }
 
 .chamada3 {
@@ -236,6 +236,100 @@ body {
     opacity: 1;
 }
 
+.swiper-container {
+    align-items: center;
+}
+
+.swiper-wrapper,
+.blocos {
+    display: flex;
+    width: 100vw;
+    background-color: #da5f17;
+    align-items: center;
+    height: 430px;
+    justify-content: center;
+
+
+}
+
+
+#primeiro,
+#segundo,
+#terceiro,
+#quarta {
+    background-color: #fff;
+    height: 324px;
+    width: 250px;
+    border-radius: 7px;
+    text-align: center;
+    box-shadow: 5px 6px rgba(0, 0, 0, 0.25);
+    margin: 0 2%;
+}
+
+#quarta {
+    margin-right: 3%
+}
+
+#primeiro p,
+#segundo p,
+#terceiro p,
+#quarta p {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+
+/* alinhando com o margin top as escritas */
+#primeiro span,
+#segundo span,
+#terceiro span,
+#quarta span {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 20px;
+}
+
+#primeiro-img {
+    margin-top: 2%;
+}
+
+#segundo p {
+    margin-top: 4px;
+    font-size: 18px;
+}
+
+#terceiro p {
+    margin-top: 23.5px;
+    font-size: 18px;
+}
+
+#primeiro p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#quarta p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+
+#terceiro-img {
+    margin-top: 17px;
+}
+
+.swiper-container {
+    display: none;
+
+}
+
+.swiper-slide {
+    width: 100%;
+}
+
 @media screen and (max-width:600px) {
     body {
         overflow-x: hidden;
@@ -258,7 +352,7 @@ body {
     header {
         display: block;
     }
-    
+
 
     .mobile {
         display: flex;
@@ -288,15 +382,18 @@ body {
         transform: translateY(20%);
         font-size: 17px;
     }
-    .mobile ul a{
+
+    .mobile ul a {
         text-decoration: none;
         color: white;
     }
-    .mobile ul li{
+
+    .mobile ul li {
         margin-bottom: 8px;
         font-weight: 600;
-        
+
     }
+
     #navmobile {
         margin: 0 auto;
         background-color: #da5f17;
@@ -307,35 +404,38 @@ body {
         position: relative;
         animation-duration: 0.5s;
         display: none;
-      }
-      
-      .subir {
+    }
+
+    .subir {
         animation-name: subirAnimacao;
-      }
-      
-      .descer {
+    }
+
+    .descer {
         animation-name: descerAnimacao;
-        animation-fill-mode: none; /* Reset the 'top' property after animation */
-      }
-      
-      @keyframes subirAnimacao {
+        animation-fill-mode: none;
+        /* Reset the 'top' property after animation */
+    }
+
+    @keyframes subirAnimacao {
         0% {
-          top: -100%;
+            top: -100%;
         }
+
         100% {
-          top: 0;
+            top: 0;
         }
-      }
-      
-      @keyframes descerAnimacao {
+    }
+
+    @keyframes descerAnimacao {
         0% {
-          top: 0;
+            top: 0;
         }
+
         100% {
-          top: -260%;
+            top: -260%;
         }
-      }
-      
+    }
+
 
     .mobile img {
         margin-top: 10px;
@@ -351,6 +451,7 @@ body {
         position: relative;
         left: 50%;
     }
+
     .sessao1,
     .sessao2,
     .sessao3 {
@@ -362,7 +463,8 @@ body {
         flex-direction: column;
         margin-bottom: 70px;
     }
-    .sessao1{
+
+    .sessao1 {
         margin-top: 10px;
     }
 
@@ -371,6 +473,7 @@ body {
         margin-bottom: 20px;
         font-size: 35px;
     }
+
     .chamada,
     .chamada2,
     .chamada3 {
@@ -379,7 +482,8 @@ body {
         align-items: center;
         margin-left: 0;
     }
-    .chamada3{
+
+    .chamada3 {
         margin-top: -30px;
     }
 
@@ -411,33 +515,37 @@ body {
         margin: 0 auto;
     }
 
-    .chamada-p2 p{
+    .chamada-p2 p {
         width: 100%;
         font-size: 1rem;
         background-color: #d7d7d7d6;
         border-radius: 8px;
     }
-       
-    
 
-    .texto-chamada2{
+
+
+    .texto-chamada2 {
         display: flex;
         justify-content: center;
     }
+
     .texto-chamada2 h2 {
         margin-bottom: -140px;
         color: #000000;
 
 
     }
-    .chamada-texto3{
+
+    .chamada-texto3 {
         width: 90vw;
     }
-    .chamada-texto3 p{
+
+    .chamada-texto3 p {
         margin-top: 2%;
         font-size: 15px;
     }
-    .chamada-p2{
+
+    .chamada-p2 {
         width: 100vw;
         height: auto;
         position: absolute;
@@ -448,6 +556,37 @@ body {
         height: 40vh;
         text-align: center;
         left: 10%;
-       
+
     }
+
+    .container-sec {
+        display: none;
+    }
+
+    .swiper-container {
+        width: 100vw;
+        height: 50vh;
+        display: block;
+        background-color: #da5f17;
+    }
+
+    .swiper-slide {
+        width: 100%;
+        height: 500px;
+
+    }
+
+    #primeiro,
+    #segundo,
+    #terceiro,
+    #quarta {
+        
+        height: 80%;
+        width: 100px;
+        border-radius: 7px;
+        text-align: center;
+        box-shadow: 5px 6px rgba(0, 0, 0, 0.25);
+        margin: 0 2%;
+    }
+
 }
